@@ -10,7 +10,7 @@ export const theme = {
         black: '#000000'
     },
     FONT_SIZE: {
-        xmall: '13px',
+        xmall: '12px',
         small: '14px',
         regular: '16px',
         large: '18px',
