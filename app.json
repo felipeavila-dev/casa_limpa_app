@@ -2,6 +2,7 @@
   "expo": {
     "name": "casa_limpa_app",
     "slug": "casa_limpa_app",
+    "scheme": "casa_limpa_app",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,14 +16,20 @@
       "**/*"
     ],
     "ios": {
+      "googleServicesFile": "./GoogleService-Info.plist",
       "supportsTablet": true
     },
     "android": {
+      "googleServicesFile": "./google-services.json",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.anonymous.casa_limpa_app"
     },
+    "plugins": [
+      "@react-native-google-signin/google-signin"
+    ],
     "web": {
       "favicon": "./assets/favicon.png"
     }
